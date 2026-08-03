@@ -1,0 +1,194 @@
+/* ==========================
+   Why Choose Us
+========================== */
+
+.why-choose-us {
+  width: 100%;
+  padding: 100px 0;
+
+  background: #f8fafc;
+}
+
+.why-choose-us__container {
+  width: 100%;
+  max-width: 1320px;
+
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+/* ==========================
+   Header
+========================== */
+
+.why-choose-us__header {
+  max-width: 680px;
+
+  margin: 0 auto 60px;
+
+  text-align: center;
+}
+
+.why-choose-us__eyebrow {
+  display: inline-block;
+
+  margin-bottom: 14px;
+
+  color: #b18b2e;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.why-choose-us__header h2 {
+  margin: 0;
+
+  color: #0f172a;
+
+  font-size: 42px;
+  font-weight: 700;
+
+  line-height: 1.2;
+}
+
+.why-choose-us__header p {
+  margin: 18px auto 0;
+
+  color: #64748b;
+
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* ==========================
+   Feature Grid
+========================== */
+
+.why-choose-us__grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 24px;
+}
+
+/* ==========================
+   Feature Card
+========================== */
+
+.feature-card {
+  padding: 36px 28px;
+
+  background: #ffffff;
+
+  border: 1px solid #eef2f7;
+  border-radius: 16px;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+
+  border-color: #e2e8f0;
+
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+}
+
+/* ==========================
+   Icon
+========================== */
+
+.feature-card__icon {
+  width: 54px;
+  height: 54px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 26px;
+
+  border-radius: 12px;
+
+  background: #eef2ff;
+  color: #1e3a8a;
+
+  font-size: 25px;
+}
+
+/* ==========================
+   Text
+========================== */
+
+.feature-card h3 {
+  margin: 0 0 12px;
+
+  color: #0f172a;
+
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.feature-card p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+/* ==========================
+   Tablet
+========================== */
+
+@media (max-width: 992px) {
+  .why-choose-us {
+    padding: 80px 0;
+  }
+
+  .why-choose-us__container {
+    padding: 0 24px;
+  }
+
+  .why-choose-us__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ==========================
+   Mobile
+========================== */
+
+@media (max-width: 768px) {
+  .why-choose-us {
+    padding: 70px 0;
+  }
+
+  .why-choose-us__container {
+    padding: 0 20px;
+  }
+
+  .why-choose-us__header {
+    margin-bottom: 40px;
+  }
+
+  .why-choose-us__header h2 {
+    font-size: 34px;
+  }
+
+  .why-choose-us__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card {
+    padding: 30px 24px;
+  }
+}

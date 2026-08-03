@@ -1,10 +1,20 @@
-function Home() {
-  return (
-    <main>
-      <h1>Home</h1>
-      <p>Welcome to SS Garments.</p>
-    </main>
-  )
-}
+import Categories from "../../components/Categories/Categories";
+import ContactCTA from "../../components/ContactCTA/ContactCTA";
+import FeaturedProducts from "../../components/FeaturedProducts/FeaturedProducts";
+import HeroBanner from "../../components/HeroBanner/HeroBanner";
+import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
 
-export default Home
+const Home = () => {
+  return (
+    <>
+      <HeroBanner />
+      <Categories/>
+      <WhyChooseUs/>
+      <FeaturedProducts />
+      <ContactCTA />
+     
+    </>
+  );
+};
+
+export default Home;

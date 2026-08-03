@@ -1,0 +1,192 @@
+/* ==========================
+   Contact CTA
+========================== */
+
+.contact-cta {
+  width: 100%;
+  padding: 60px 20px;
+  background: #ffffff;
+}
+
+.contact-cta__container {
+  width: 100%;
+  max-width: 1320px;
+
+  margin: 0 auto;
+  padding: 40px 24px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 32px;
+
+  background: #0f172a;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+}
+
+/* ==========================
+   Content
+========================== */
+
+.contact-cta__content {
+  max-width: 650px;
+}
+
+.contact-cta__eyebrow {
+  display: inline-block;
+
+  margin-bottom: 14px;
+
+  color: #d4af37;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.contact-cta__content h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 30px;
+  font-weight: 700;
+
+  line-height: 1.25;
+}
+
+.contact-cta__content h2 span {
+  color: #d4af37;
+}
+
+.contact-cta__content p {
+  margin: 18px 0 0;
+
+  color: #94a3b8;
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* ==========================
+   Actions
+========================== */
+
+.contact-cta__actions {
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.contact-cta__whatsapp,
+.contact-cta__contact {
+  min-height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  padding: 0 20px;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+/* WhatsApp */
+
+.contact-cta__whatsapp {
+  background: #25d366;
+  color: #ffffff;
+}
+
+.contact-cta__whatsapp svg {
+  font-size: 20px;
+}
+
+.contact-cta__whatsapp:hover {
+  background: #1ebe5d;
+  transform: translateY(-2px);
+}
+
+/* Contact */
+
+.contact-cta__contact {
+  color: #ffffff;
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  background: transparent;
+}
+
+.contact-cta__contact:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* ==========================
+   Tablet
+========================== */
+
+@media (min-width: 768px) {
+  .contact-cta {
+    padding: 80px 32px;
+  }
+
+  .contact-cta__container {
+    padding: 50px 40px;
+  }
+
+  .contact-cta__content h2 {
+    font-size: 38px;
+  }
+
+  .contact-cta__actions {
+    flex-direction: row;
+  }
+
+  .contact-cta__whatsapp,
+  .contact-cta__contact {
+    padding: 0 24px;
+  }
+}
+
+/* ==========================
+   Laptop
+========================== */
+
+@media (min-width: 1024px) {
+  .contact-cta {
+    padding: 100px 32px;
+  }
+
+  .contact-cta__container {
+    padding: 60px;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 60px;
+  }
+
+  .contact-cta__content h2 {
+    font-size: 42px;
+  }
+
+  .contact-cta__actions {
+    flex-shrink: 0;
+  }
+}
