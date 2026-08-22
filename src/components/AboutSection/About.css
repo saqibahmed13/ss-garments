@@ -1,0 +1,544 @@
+/* ==========================
+   About Section
+========================== */
+
+.about {
+  width: 100%;
+
+  padding: 90px 0 70px;
+
+  background: #ffffff;
+
+  scroll-margin-top: 80px;
+}
+
+
+/* ==========================
+   Main Container
+========================== */
+
+.about__container {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 0 32px;
+
+  display: grid;
+
+  grid-template-columns: 1fr 0.8fr;
+
+  align-items: center;
+
+  gap: 90px;
+}
+
+
+/* ==========================
+   Content
+========================== */
+
+.about__content {
+  max-width: 620px;
+}
+
+
+/* ==========================
+   Eyebrow
+========================== */
+
+.about__eyebrow {
+  display: inline-block;
+
+  margin-bottom: 16px;
+
+  color: #b18b2e;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+}
+
+
+/* ==========================
+   Title
+========================== */
+
+.about__title {
+  margin: 0;
+
+  color: #0f172a;
+
+  font-size: 48px;
+
+  font-weight: 700;
+
+  line-height: 1.1;
+
+  letter-spacing: -1.5px;
+}
+
+.about__title span {
+  display: block;
+
+  color: #1e3a8a;
+}
+
+
+/* ==========================
+   Description
+========================== */
+
+.about__description {
+  max-width: 600px;
+
+  margin: 22px 0 0;
+
+  color: #64748b;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+
+/* ==========================
+   Owner Information
+========================== */
+
+.about__owner {
+  margin-top: 28px;
+
+  padding-left: 18px;
+
+  border-left: 3px solid #b18b2e;
+}
+
+
+.about__owner-info {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+
+.about__owner-info strong {
+  color: #0f172a;
+
+  font-size: 17px;
+
+  font-weight: 700;
+}
+
+
+.about__owner-info span {
+  color: #64748b;
+
+  font-size: 13px;
+}
+
+
+/* ==========================
+   Highlights
+========================== */
+
+.about__highlights {
+  display: flex;
+
+  margin-top: 34px;
+}
+
+
+.about__highlight {
+  min-width: 120px;
+
+  padding-right: 25px;
+
+  margin-right: 25px;
+
+  border-right: 1px solid #e2e8f0;
+}
+
+
+.about__highlight:last-child {
+  padding-right: 0;
+
+  margin-right: 0;
+
+  border-right: none;
+}
+
+
+.about__highlight strong {
+  display: block;
+
+  color: #1e3a8a;
+
+  font-size: 25px;
+
+  font-weight: 700;
+}
+
+
+.about__highlight span {
+  display: block;
+
+  margin-top: 4px;
+
+  color: #64748b;
+
+  font-size: 11px;
+
+  line-height: 1.4;
+}
+
+
+/* ==========================
+   Owner Visual
+========================== */
+
+.about__owner-visual {
+  position: relative;
+
+  min-height: 450px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+
+/* ==========================
+   Owner Photo
+========================== */
+
+.about__owner-photo-wrapper {
+  width: 360px;
+
+  height: 430px;
+
+  overflow: hidden;
+
+  border-radius: 20px;
+
+  background: #f1f5f9;
+
+  box-shadow:
+    0 25px 50px rgba(15, 23, 42, 0.15);
+}
+
+
+.about__owner-photo {
+  width: 100%;
+
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+
+/* ==========================
+   Experience Card
+========================== */
+
+.about__experience-card {
+  position: absolute;
+
+  right: 5px;
+
+  bottom: 30px;
+
+  width: 145px;
+
+  min-height: 125px;
+
+  padding: 20px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  border-radius: 15px;
+
+  background: #0f2f63;
+
+  box-shadow:
+    0 15px 35px rgba(15, 23, 42, 0.2);
+}
+
+
+.about__experience-card strong {
+  color: #d4af37;
+
+  font-size: 32px;
+
+  line-height: 1;
+}
+
+
+.about__experience-card span {
+  margin-top: 8px;
+
+  color: #ffffff;
+
+  font-size: 12px;
+
+  line-height: 1.4;
+}
+
+
+/* ==========================
+   Schools
+========================== */
+
+.about__schools {
+  width: 100%;
+
+  max-width: 1200px;
+
+  margin: 90px auto 0;
+
+  padding: 60px 32px 0;
+
+  text-align: center;
+
+  border-top: 1px solid #e2e8f0;
+}
+
+
+.about__schools-eyebrow {
+  color: #b18b2e;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+}
+
+
+.about__schools-title {
+  margin: 10px 0 0;
+
+  color: #0f172a;
+
+  font-size: 30px;
+
+  font-weight: 700;
+}
+
+
+.about__schools-description {
+  max-width: 600px;
+
+  margin: 12px auto 0;
+
+  color: #64748b;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* ==========================
+   School List
+========================== */
+
+.about__school-list {
+  margin-top: 35px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(5, 1fr);
+
+  gap: 15px;
+}
+
+
+.about__school {
+  min-height: 70px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 15px;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  color: #1e3a8a;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+
+.about__school:hover {
+  transform: translateY(-3px);
+
+  border-color: #d4af37;
+
+  box-shadow:
+    0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
+
+/* ==========================
+   Tablet
+========================== */
+
+@media (max-width: 900px) {
+
+  .about {
+    padding-top: 75px;
+  }
+
+  .about__container {
+    grid-template-columns: 1fr;
+
+    gap: 55px;
+  }
+
+  .about__content {
+    max-width: 700px;
+  }
+
+  .about__owner-visual {
+    min-height: 430px;
+  }
+
+  .about__school-list {
+    grid-template-columns:
+      repeat(3, 1fr);
+  }
+
+}
+
+
+/* ==========================
+   Mobile
+========================== */
+
+@media (max-width: 600px) {
+
+  .about {
+    padding: 60px 0 50px;
+  }
+
+  .about__container {
+    padding: 0 20px;
+
+    gap: 45px;
+  }
+
+  .about__title {
+    font-size: 36px;
+  }
+
+  .about__description {
+    font-size: 15px;
+
+    line-height: 1.7;
+  }
+
+  .about__highlights {
+    gap: 0;
+  }
+
+  .about__highlight {
+    min-width: 0;
+
+    flex: 1;
+
+    padding-right: 12px;
+
+    margin-right: 12px;
+  }
+
+  .about__highlight strong {
+    font-size: 21px;
+  }
+
+  .about__highlight span {
+    font-size: 10px;
+  }
+
+  .about__owner-visual {
+    min-height: 360px;
+  }
+
+  .about__owner-photo-wrapper {
+    width: 280px;
+
+    height: 350px;
+  }
+
+  .about__experience-card {
+    right: 0;
+
+    bottom: 15px;
+
+    width: 120px;
+
+    min-height: 105px;
+
+    padding: 16px;
+  }
+
+  .about__experience-card strong {
+    font-size: 27px;
+  }
+
+  .about__schools {
+    margin-top: 65px;
+
+    padding: 45px 20px 0;
+  }
+
+  .about__schools-title {
+    font-size: 25px;
+  }
+
+  .about__school-list {
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    gap: 10px;
+  }
+
+  .about__school {
+    min-height: 60px;
+
+    font-size: 11px;
+  }
+
+}

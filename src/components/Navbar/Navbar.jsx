@@ -1,90 +1,61 @@
-import { NavLink } from "react-router-dom";
 import { FaWhatsapp } from "react-icons/fa";
 
-import logo from "../../assets/images/ss-garments2.png";
+import logo from "../../assets/images/ss-garments1.png";
+
 import "./Navbar.css";
 
 const Navbar = () => {
-    return (
-        <nav className="navbar">
-            <div className="navbar__container">
-                {/* Logo */}
-                <NavLink to="/" className="navbar__logo">
-                    <img
-                        src={logo}
-                        alt="SS Garments Logo"
-                        className="navbar__logo-image"
-                    />
-                </NavLink>
+  return (
+    <header className="navbar">
 
-                {/* Navigation */}
-                <ul className="navbar__links">
-                    <li>
-                        <NavLink
-                            to="/"
-                            className={({ isActive }) =>
-                                isActive ? "nav-link active" : "nav-link"
-                            }
-                        >
-                            Home
-                        </NavLink>
-                    </li>
+      <div className="navbar__container">
 
-                    <li>
-                        <NavLink
-                            to="/products"
-                            className={({ isActive }) =>
-                                isActive ? "nav-link active" : "nav-link"
-                            }
-                        >
-                            Products
-                        </NavLink>
-                    </li>
+        {/* Logo */}
+        <a href="#home" className="navbar__logo">
+          <img
+            src={logo}
+            alt="SS Garments"
+            className="navbar__logo-image"
+          />
 
-                    <li>
-                        <NavLink
-                            to="/gallery"
-                            className={({ isActive }) =>
-                                isActive ? "nav-link active" : "nav-link"
-                            }
-                        >
-                            Gallery
-                        </NavLink>
-                    </li>
+          <div className="navbar__brand">
+            <h1>GARMENTS</h1>
+            <span>Quality in Every Stitch</span>
+          </div>
+        </a>
 
-                    <li>
-                        <NavLink
-                            to="/about"
-                            className={({ isActive }) =>
-                                isActive ? "nav-link active" : "nav-link"
-                            }
-                        >
-                            About
-                        </NavLink>
-                    </li>
+        {/* Navigation */}
+        <nav className="navbar__links">
 
-                    <li>
-                        <NavLink
-                            to="/contact"
-                            className={({ isActive }) =>
-                                isActive ? "nav-link active" : "nav-link"
-                            }
-                        >
-                            Contact
-                        </NavLink>
-                    </li>
-                </ul>
+          <a href="#home">Home</a>
 
-                {/* CTA */}
-                <div className="navbar__actions">
-                    <button className="whatsapp-btn">
-                        <FaWhatsapp />
-                        WhatsApp
-                    </button>
-                </div>
-            </div>
+          <a href="#about">About</a>
+
+          <a href="#collections">Collections</a>
+
+          <a href="#why-us">Why Us</a>
+
+          <a href="#gallery">Gallery</a>
+
+          <a href="#contact">Contact</a>
+
         </nav>
-    );
+
+        {/* WhatsApp */}
+        <a
+          href="https://wa.me/YOUR_NUMBER"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="navbar__whatsapp"
+        >
+          <FaWhatsapp />
+          <span>WhatsApp</span>
+        </a>
+
+      </div>
+
+    </header>
+  );
 };
 
 export default Navbar;

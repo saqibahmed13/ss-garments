@@ -1,0 +1,40 @@
+:root {
+
+  /* ===== Brand Colors ===== */
+
+  --primary: #1E3A8A;
+  --primary-dark: #142C6E;
+
+  --secondary: #D4AF37;
+
+  --accent: #25D366;
+
+  /* ===== Backgrounds ===== */
+
+  --background: #F8FAFC;
+
+  --surface: #FFFFFF;
+
+  --surface-light: #EEF4FF;
+
+  /* ===== Text ===== */
+
+  --text-primary: #0F172A;
+
+  --text-secondary: #64748B;
+
+  --text-light: #94A3B8;
+
+  /* ===== Border ===== */
+
+  --border: #E2E8F0;
+
+  /* ===== Shadow ===== */
+
+  --shadow-sm: 0 4px 12px rgba(15,23,42,.06);
+
+  --shadow-md: 0 10px 30px rgba(15,23,42,.08);
+
+  --shadow-lg: 0 20px 50px rgba(15,23,42,.12);
+
+}

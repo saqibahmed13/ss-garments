@@ -5,7 +5,7 @@ import "./CategoryCard.css";
 
 const CategoryCard = ({ title, description, image, path }) => {
   return (
-    <Link to={path} className="category-card">
+    <a href={path} className="category-card">
       <img
         src={image}
         alt={title}
@@ -24,7 +24,7 @@ const CategoryCard = ({ title, description, image, path }) => {
           <FaArrowRight />
         </span>
       </div>
-    </Link>
+    </a>
   );
 };
 

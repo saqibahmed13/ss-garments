@@ -1,94 +1,158 @@
-import { Link } from "react-router-dom";
-import { FaArrowRight } from "react-icons/fa6";
+import { useState } from "react";
+import { FaArrowRight, FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 
 import "./HeroBanner.css";
 
+// Change these paths to your actual image names
+
+import uniformBanner from "../../assets/images/gallery/SchoolUniform.png";
+import culturalBanner from "../../assets/images/gallery/Cultural.png";
+import eventBanner from "../../assets/images/gallery/Cultural2.png";
+
+const banners = [
+  {
+    image: uniformBanner,
+    eyebrow: "Quality in Every Stitch",
+    title: "School",
+    highlight: "Uniforms",
+    description:
+      "Smart, comfortable and durable uniforms crafted for everyday excellence.",
+  },
+  {
+    image: culturalBanner,
+    eyebrow: "Celebrate Tradition",
+    title: "Indian Cultural",
+    highlight: "Costumes",
+    description:
+      "Beautifully crafted traditional costumes for cultural events and performances.",
+  },
+  {
+    image: eventBanner,
+    eyebrow: "Made for Every Occasion",
+    title: "Event",
+    highlight: "Wear",
+    description:
+      "Stylish outfits designed to make every special occasion memorable.",
+  },
+];
+
 const HeroBanner = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) =>
+      prev === banners.length - 1 ? 0 : prev + 1
+    );
+  };
+
+  const previousSlide = () => {
+    setCurrentSlide((prev) =>
+      prev === 0 ? banners.length - 1 : prev - 1
+    );
+  };
+
   return (
     <section className="hero">
-      <div className="hero__container">
 
-        {/* Left Content */}
-        <div className="hero__content">
+      {/* ==========================
+          Slider
+      ========================== */}
 
-          <span className="hero__eyebrow">
-            Crafted for Every Moment
-          </span>
+      <div className="hero__slider">
 
-          <h1 className="hero__title">
-            Quality You Can Feel.
-            <span> Crafted to Last.</span>
-          </h1>
+        {banners.map((banner, index) => (
+          <div
+            key={index}
+            className={`hero__slide ${
+              index === currentSlide ? "hero__slide--active" : ""
+            }`}
+          >
+            <img
+              src={banner.image}
+              alt={`${banner.title} ${banner.highlight}`}
+              className="hero__background"
+            />
 
-          <p className="hero__description">
-            Premium school uniforms, cultural wear, and custom garments
-            crafted with quality fabrics, comfort, and attention to every
-            stitch.
-          </p>
+            {/* Overlay */}
+            <div className="hero__overlay" />
 
-          <div className="hero__actions">
+            {/* ==========================
+                Content
+            ========================== */}
 
-            <Link
-              to="/products"
-              className="hero__primary-btn"
-            >
-              Explore Collection
-              <FaArrowRight />
-            </Link>
+            <div className="hero__container">
+              <div className="hero__content">
 
-            <Link
-              to="/contact"
-              className="hero__secondary-btn"
-            >
-              Contact Us
-            </Link>
+                <span className="hero__eyebrow">
+                  {banner.eyebrow}
+                </span>
 
-          </div>
+                <h1 className="hero__title">
+                  {banner.title}
+                  <span>{banner.highlight}</span>
+                </h1>
 
-          {/* Small trust indicators */}
-          <div className="hero__highlights">
+                <p className="hero__description">
+                  {banner.description}
+                </p>
 
-            <div className="hero__highlight">
-              <strong>Quality</strong>
-              <span>Premium Fabrics</span>
+                <div className="hero__actions">
+                  <a
+                    href="#collections"
+                    className="hero__primary-btn"
+                  >
+                    Explore Collection
+                    <FaArrowRight />
+                  </a>
+                </div>
+
+              </div>
             </div>
-
-            <div className="hero__divider"></div>
-
-            <div className="hero__highlight">
-              <strong>Custom</strong>
-              <span>Tailored Orders</span>
-            </div>
-
-            <div className="hero__divider"></div>
-
-            <div className="hero__highlight">
-              <strong>Bulk</strong>
-              <span>School Orders</span>
-            </div>
-
           </div>
-
-        </div>
-
-        {/* Right Visual */}
-        <div className="hero__visual">
-
-          <div className="hero__image-placeholder">
-            <span>SS</span>
-
-            <p>
-              Garment Image
-            </p>
-          </div>
-
-          {/* Decorative element */}
-          <div className="hero__shape hero__shape--one"></div>
-          <div className="hero__shape hero__shape--two"></div>
-
-        </div>
+        ))}
 
       </div>
+
+      {/* ==========================
+          Navigation
+      ========================== */}
+
+      <button
+        type="button"
+        className="hero__arrow hero__arrow--left"
+        onClick={previousSlide}
+        aria-label="Previous slide"
+      >
+        <FaChevronLeft />
+      </button>
+
+      <button
+        type="button"
+        className="hero__arrow hero__arrow--right"
+        onClick={nextSlide}
+        aria-label="Next slide"
+      >
+        <FaChevronRight />
+      </button>
+
+      {/* ==========================
+          Dots
+      ========================== */}
+
+      <div className="hero__dots">
+        {banners.map((_, index) => (
+          <button
+            key={index}
+            type="button"
+            className={`hero__dot ${
+              index === currentSlide ? "hero__dot--active" : ""
+            }`}
+            onClick={() => setCurrentSlide(index)}
+            aria-label={`Go to slide ${index + 1}`}
+          />
+        ))}
+      </div>
+
     </section>
   );
 };

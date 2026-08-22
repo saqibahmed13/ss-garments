@@ -1,8 +1,16 @@
-import AppRoutes from './routes/AppRoutes.jsx'
-import './App.css'
+import Navbar from "./components/Navbar/Navbar";
+import Home from "./pages/Home/Home";
 
 function App() {
-  return <AppRoutes />
+  return (
+    <>
+      <Navbar />
+
+      <main>
+        <Home />
+      </main>
+    </>
+  );
 }
 
-export default App
+export default App;
