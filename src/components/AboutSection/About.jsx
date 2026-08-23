@@ -9,7 +9,7 @@ const About = () => {
       <div className="about__container">
 
         {/* ==========================
-            Left - Owner Information
+            Left - About Information
         ========================== */}
 
         <div className="about__content">
@@ -20,47 +20,39 @@ const About = () => {
 
           <h2 className="about__title">
             Experience you can
-            <span>trust.</span>
+            <span> trust.</span>
           </h2>
 
           <p className="about__description">
-            SS Garments is built on years of experience in garment
-            manufacturing and tailoring, with a strong focus on quality,
-            comfort and customer satisfaction.
+            SS Garments is a garment manufacturing and tailoring business
+            built on <strong>20+ years of experience</strong>, with a strong
+            focus on quality, comfort, craftsmanship and customer
+            satisfaction.
           </p>
 
           <p className="about__description">
             Our Founder &amp; Owner, <strong>Mohammed Inayath</strong>, brings
-            extensive experience from the garment industry, including
-            <strong> 5 years of professional experience in Saudi Arabia</strong>.
-            This international experience has helped build a strong
-            understanding of garment quality, craftsmanship, fabrics,
-            finishing and customer requirements.
+            valuable industry experience, including <strong>5 years of
+            professional experience in Saudi Arabia</strong>.
           </p>
 
           <p className="about__description">
-            We specialize in manufacturing <strong>school uniforms,
-              children's wear and adult garments</strong>, serving schools,
-            institutions, families and individual customers with carefully
-            crafted clothing for everyday and special occasions.
+            We specialize in <strong>school uniforms, children's wear,
+            adult garments, traditional and Indo-Western costumes</strong>.
+            From everyday uniforms to festive, dance and special-event
+            outfits, we provide customized garments to meet individual
+            requirements.
           </p>
 
           <p className="about__description">
-            We also create a wide range of <strong>traditional, ethnic and
-              Indo-Western costumes</strong> for children and adults. Our
-            collection includes festive outfits, cultural costumes, dance
-            costumes, stage performance outfits and customized garments
-            designed for special events and celebrations.
+            With careful attention to fabrics, fitting, stitching and
+            finishing, we aim to deliver garments that combine
+            <strong> quality, comfort and style</strong>.
           </p>
 
-          <p className="about__description">
-            From fabric selection and fitting to embroidery, zari work,
-            decorative detailing and final finishing, we pay attention to
-            every detail to deliver garments that combine comfort, quality
-            and style while meeting our customers' specific requirements.
-          </p>
 
           {/* Owner */}
+
           <div className="about__owner">
 
             <div className="about__owner-info">
@@ -76,6 +68,7 @@ const About = () => {
             </div>
 
           </div>
+
 
           {/* Highlights */}
 
@@ -153,17 +146,12 @@ const About = () => {
           and customized garments.
         </p>
 
-
         <div className="about__school-list">
 
           <div className="about__school">
             Bethel Public School
           </div>
-
-          <div className="about__school">
-            Kinto High School
-          </div>
-
+          
           <div className="about__school">
             King Kits Public School
           </div>

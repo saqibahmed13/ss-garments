@@ -1,72 +1,96 @@
-import { LuShirt, LuScissors, LuBoxes, LuTruck } from "react-icons/lu";
-
 import "./WhyChooseUs.css";
 
+const reasons = [
+  {
+    number: "01",
+    title: "20+ Years of Experience",
+    description:
+      "Decades of experience in garment manufacturing and tailoring, with a strong understanding of quality and customer requirements.",
+  },
+  {
+    number: "02",
+    title: "Quality Fabrics",
+    description:
+      "We carefully select fabrics that offer comfort, durability, colour retention and a quality finish.",
+  },
+  {
+    number: "03",
+    title: "Customized Garments",
+    description:
+      "From colours and designs to sizes and finishing, garments can be customized according to your specific requirements.",
+  },
+  {
+    number: "04",
+    title: "School & Bulk Orders",
+    description:
+      "Experienced in handling school uniforms, institutional requirements and bulk garment orders.",
+  },
+  {
+    number: "05",
+    title: "Attention to Detail",
+    description:
+      "Every garment is carefully stitched and finished with attention to fitting, comfort and overall appearance.",
+  },
+];
+
 const WhyChooseUs = () => {
-  const features = [
-    {
-      id: 1,
-      icon: <LuShirt />,
-      title: "Quality Fabrics",
-      description:
-        "Carefully selected fabrics designed for comfort, durability and everyday wear.",
-    },
-    {
-      id: 2,
-      icon: <LuScissors />,
-      title: "Custom Tailoring",
-      description:
-        "Garments tailored to meet specific sizing, design and institutional requirements.",
-    },
-    {
-      id: 3,
-      icon: <LuBoxes />,
-      title: "Bulk Orders",
-      description:
-        "Reliable production for schools, institutions, events and large-volume requirements.",
-    },
-    {
-      id: 4,
-      icon: <LuTruck />,
-      title: "Reliable Delivery",
-      description:
-        "Organized production and dependable delivery for every order, large or small.",
-    },
-  ];
-
   return (
-    <section className="why-choose-us">
-      <div className="why-choose-us__container">
+    <section id="why-us" className="why-us">
 
-        <div className="why-choose-us__header">
-          <span className="why-choose-us__eyebrow">
-            Why SS Garments
+      <div className="why-us__container">
+
+        {/* Header */}
+
+        <div className="why-us__header">
+
+          <span className="why-us__eyebrow">
+            Why Choose Us
           </span>
 
-          <h2>Made with Quality. Built on Trust.</h2>
+          <h2 className="why-us__title">
+            Quality you can
+            <span> count on.</span>
+          </h2>
 
-          <p>
-            From fabric selection to the final stitch, we focus on creating
-            garments that combine comfort, durability and dependable
-            craftsmanship.
+          <p className="why-us__description">
+            From fabric selection to final finishing, we focus on
+            delivering garments that meet your requirements with
+            quality and care.
           </p>
+
         </div>
 
-        <div className="why-choose-us__grid">
-          {features.map((feature) => (
-            <div className="feature-card" key={feature.id}>
-              <div className="feature-card__icon">
-                {feature.icon}
+
+        {/* Reasons */}
+
+        <div className="why-us__grid">
+
+          {reasons.map((reason) => (
+            <div className="why-us__card" key={reason.number}>
+
+              <div className="why-us__number">
+                {reason.number}
               </div>
 
-              <h3>{feature.title}</h3>
+              <div className="why-us__card-content">
 
-              <p>{feature.description}</p>
+                <h3 className="why-us__card-title">
+                  {reason.title}
+                </h3>
+
+                <p className="why-us__card-description">
+                  {reason.description}
+                </p>
+
+              </div>
+
             </div>
           ))}
+
         </div>
 
       </div>
+
     </section>
   );
 };

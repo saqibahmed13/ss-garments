@@ -1,8 +1,9 @@
 
 import HeroBanner from "../../components/HeroBanner/HeroBanner";
-
 import About from "../../components/AboutSection/About";
 import Products from "../Products/Products";
+import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
+import Contact from "../../components/Contact/Contact";
 
 const Home = () => {
   return (
@@ -11,9 +12,11 @@ const Home = () => {
 
       <About />
 
-     
-
       <Products />
+
+      <WhyChooseUs/>
+       <Contact />
+      
 
     </>
   );

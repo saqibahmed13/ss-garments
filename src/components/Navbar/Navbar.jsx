@@ -41,17 +41,6 @@ const Navbar = () => {
 
         </nav>
 
-        {/* WhatsApp */}
-        <a
-          href="https://wa.me/YOUR_NUMBER"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="navbar__whatsapp"
-        >
-          <FaWhatsapp />
-          <span>WhatsApp</span>
-        </a>
-
       </div>
 
     </header>

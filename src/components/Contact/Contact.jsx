@@ -77,9 +77,9 @@ ${message}
 
               <div className="contact__details">
 
-                {/* Phone */}
+                {/* Phone 1 */}
                 <a
-                  href="tel:+91XXXXXXXXXX"
+                  href="tel:+919XXXXXXXXX"
                   className="contact__detail"
                 >
                   <div className="contact__icon">
@@ -92,7 +92,28 @@ ${message}
                     </span>
 
                     <strong>
-                      +91 XXXXX XXXXX
+                      +91 9900349620
+                    </strong>
+                  </div>
+                </a>
+
+
+                {/* Phone 2 */}
+                <a
+                  href="+918XXXXXXXXX"
+                  className="contact__detail"
+                >
+                  <div className="contact__icon">
+                    <span>☎</span>
+                  </div>
+
+                  <div>
+                    <span className="contact__detail-label">
+                      Alternate Number
+                    </span>
+
+                    <strong>
+                      +91 8050090080
                     </strong>
                   </div>
                 </a>
