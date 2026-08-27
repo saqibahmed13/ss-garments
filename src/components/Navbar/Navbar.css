@@ -1,331 +1,44 @@
-/* ==========================
+/* ==============================
    Navbar
-========================== */
+================================ */
 
 .navbar {
   position: sticky;
   top: 0;
+  z-index: 1000;
 
   width: 100%;
-  height: 78px;
 
   background: #ffffff;
 
-  z-index: 1000;
+  border-bottom: 1px solid #edf0f4;
 
-  border-bottom: 1px solid #eef2f7;
-
-  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.05);
-
-  display: flex;
-  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
 }
 
-
-/* ==========================
-   Container
-========================== */
-
 .navbar__container {
-  width: 100%;
-  max-width: 1400px;
+  max-width: 1250px;
+
+  height: 78px;
 
   margin: 0 auto;
-
-  padding: 0 32px;
+  padding: 0 24px;
 
   display: flex;
   align-items: center;
-
   justify-content: space-between;
 }
 
 
-/* ==========================
+/* ==============================
    Logo
-========================== */
+================================ */
 
 .navbar__logo {
   display: flex;
   align-items: center;
 
-  flex-shrink: 0;
-
-  text-decoration: none;
-}
-
-.navbar__logo img {
-  width: 52px;
-  height: 52px;
-
-  object-fit: contain;
-
-  display: block;
-
-  transition: transform 0.3s ease;
-}
-
-.navbar__logo:hover img {
-  transform: scale(1.04);
-}
-
-
-/* ==========================
-   Navigation
-========================== */
-
-.navbar__links {
-  display: flex;
-  align-items: center;
-
-  gap: 38px;
-
-  margin-left: auto;
-  margin-right: 45px;
-}
-
-.navbar__links a {
-  position: relative;
-
-  color: #334155;
-
-  text-decoration: none;
-
-  font-size: 15px;
-  font-weight: 500;
-
-  padding: 6px 0;
-
-  transition:
-    color 0.3s ease;
-}
-
-.navbar__links a:hover {
-  color: #1e3a8a;
-}
-
-
-/* ==========================
-   Navigation Underline
-========================== */
-
-.navbar__links a::after {
-  content: "";
-
-  position: absolute;
-
-  left: 0;
-  bottom: -4px;
-
-  width: 100%;
-  height: 2px;
-
-  background: #d4af37;
-
-  transform: scaleX(0);
-
-  transform-origin: center;
-
-  transition: transform 0.3s ease;
-}
-
-.navbar__links a:hover::after {
-  transform: scaleX(1);
-}
-
-
-/* ==========================
-   WhatsApp
-========================== */
-
-.navbar__whatsapp {
-  display: inline-flex;
-
-  align-items: center;
-  justify-content: center;
-
-  gap: 8px;
-
-  flex-shrink: 0;
-
-  padding: 10px 18px;
-
-  border-radius: 999px;
-
-  background: #25d366;
-
-  color: #ffffff;
-
-  text-decoration: none;
-
-  font-size: 14px;
-
-  font-weight: 600;
-
-  transition:
-    background 0.3s ease,
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
-}
-
-.navbar__whatsapp svg {
-  font-size: 18px;
-}
-
-.navbar__whatsapp:hover {
-  background: #1ebe5d;
-
-  transform: translateY(-2px);
-
-  box-shadow:
-    0 7px 18px rgba(37, 211, 102, 0.22);
-}
-
-
-/* ==========================
-   Tablet
-========================== */
-
-@media (max-width: 1100px) {
-
-  .navbar__container {
-    padding: 0 24px;
-  }
-
-  .navbar__links {
-    gap: 25px;
-
-    margin-right: 25px;
-  }
-
-  .navbar__links a {
-    font-size: 14px;
-  }
-
-  .navbar__whatsapp {
-    padding: 9px 15px;
-
-    font-size: 13px;
-  }
-
-}
-
-
-/* ==========================
-   Smaller Tablet
-========================== */
-
-@media (max-width: 900px) {
-
-  .navbar {
-    height: 72px;
-  }
-
-  .navbar__logo img {
-    width: 48px;
-    height: 48px;
-  }
-
-  .navbar__links {
-    gap: 18px;
-
-    margin-right: 18px;
-  }
-
-  .navbar__links a {
-    font-size: 13px;
-  }
-
-  .navbar__whatsapp {
-    padding: 8px 13px;
-
-    font-size: 12px;
-  }
-
-  .navbar__whatsapp svg {
-    font-size: 16px;
-  }
-
-}
-
-
-/* ==========================
-   Mobile
-========================== */
-
-@media (max-width: 768px) {
-
-  .navbar {
-    height: 68px;
-  }
-
-  .navbar__container {
-    padding: 0 18px;
-  }
-
-  .navbar__logo img {
-    width: 46px;
-    height: 46px;
-  }
-
-  /*
-    Hide desktop navigation on mobile.
-    We can add a hamburger menu in the
-    next step.
-  */
-
-  .navbar__links {
-    display: none;
-  }
-
-  .navbar__whatsapp {
-    padding: 8px 14px;
-
-    font-size: 12px;
-  }
-
-  .navbar__whatsapp svg {
-    font-size: 17px;
-  }
-
-}
-
-
-/* ==========================
-   Small Mobile
-========================== */
-
-@media (max-width: 480px) {
-
-  .navbar__container {
-    padding: 0 14px;
-  }
-
-  .navbar__logo img {
-    width: 44px;
-    height: 44px;
-  }
-
-  .navbar__whatsapp {
-    padding: 8px 12px;
-
-    gap: 6px;
-
-    font-size: 11px;
-  }
-
-}
-
-/* ==========================
-   Logo
-========================== */
-
-.navbar__logo {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-
-  flex-shrink: 0;
+  gap: 10px;
 
   text-decoration: none;
 }
@@ -335,44 +48,390 @@
   height: 52px;
 
   object-fit: contain;
-  display: block;
 }
-
-
-/* ==========================
-   Brand
-========================== */
 
 .navbar__brand {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-
-  height: 52px;
 }
 
 .navbar__brand h1 {
   margin: 0;
 
-  color: #1e3a8a;
+  color: #1f3a5f;
 
-  font-size: 25px;
+  font-size: 18px;
   font-weight: 700;
 
   line-height: 1;
-
-  letter-spacing: 0.5px;
 }
 
 .navbar__brand span {
-  margin-top: 4px;
+  margin-top: 5px;
 
-  color: #64748b;
+  color: #667085;
 
   font-size: 9px;
+
+  letter-spacing: 1.2px;
+}
+
+
+/* ==============================
+   Desktop Navigation
+================================ */
+
+.navbar__links {
+  display: flex;
+
+  align-items: center;
+
+  gap: 34px;
+}
+
+.navbar__links a {
+  position: relative;
+
+  padding: 8px 0;
+
+  color: #344054;
+
+  font-size: 15px;
+
   font-weight: 500;
 
-  line-height: 1;
+  text-decoration: none;
 
-  letter-spacing: 1.4px;
+  transition: color 0.25s ease;
 }
+
+.navbar__links a:hover {
+  color: #1f3a5f;
+}
+
+
+/* ==============================
+   Navigation Underline
+================================ */
+
+.navbar__links a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: -5px;
+
+  width: 0;
+  height: 2px;
+
+  background: #1f3a5f;
+
+  border-radius: 2px;
+
+  transition: width 0.25s ease;
+}
+
+
+/* Hover underline */
+
+.navbar__links a:hover::after {
+  width: 100%;
+}
+
+
+/* Active navigation */
+
+.navbar__links a.active {
+  color: #1f3a5f;
+
+  font-weight: 600;
+}
+
+
+/* Active underline */
+
+.navbar__links a.active::after {
+  width: 100%;
+}
+
+
+/* ==============================
+   Mobile Menu Button
+================================ */
+
+.navbar__menu-button {
+  display: none;
+
+  width: 42px;
+  height: 42px;
+
+  padding: 0;
+
+  border: none;
+
+  background: transparent;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+
+  gap: 5px;
+
+  cursor: pointer;
+}
+
+
+/* Hamburger lines */
+
+.navbar__menu-button span {
+  display: block;
+
+  width: 22px;
+  height: 2px;
+
+  background: #1f3a5f;
+
+  border-radius: 2px;
+
+  transition:
+    transform 0.25s ease,
+    opacity 0.25s ease;
+}
+
+
+/* ==============================
+   Hamburger → X
+================================ */
+
+.navbar__menu-button--open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.navbar__menu-button--open span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar__menu-button--open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+
+/* ==============================
+   Mobile
+================================ */
+
+@media (max-width: 768px) {
+
+  /* Navbar */
+
+  .navbar__container {
+    height: 68px;
+
+    padding: 0 16px;
+  }
+
+
+  /* ============================
+     Mobile Logo
+  ============================ */
+
+  .navbar__logo-image {
+    width: 43px;
+    height: 43px;
+  }
+
+  .navbar__brand h1 {
+    font-size: 15px;
+  }
+
+  .navbar__brand span {
+    font-size: 8px;
+
+    letter-spacing: 1px;
+  }
+
+
+  /* ============================
+     Show Hamburger
+  ============================ */
+
+  .navbar__menu-button {
+    display: flex;
+  }
+
+
+  /* ============================
+     Mobile Navigation
+  ============================ */
+
+  .navbar__links {
+    position: absolute;
+
+    top: 68px;
+
+    right: 0;
+    left: auto;
+
+    width: 62%;
+    max-width: 280px;
+
+    padding: 12px 0 18px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 0;
+
+    background: #ffffff;
+
+    border-top: 1px solid #edf0f4;
+
+    border-left: 1px solid #e5e9ef;
+
+    border-bottom: 1px solid #e5e9ef;
+
+    box-shadow: -5px 10px 20px rgba(0, 0, 0, 0.08);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform: translateY(-10px);
+
+    transition:
+      opacity 0.25s ease,
+      visibility 0.25s ease,
+      transform 0.25s ease;
+  }
+
+
+  /* ============================
+     Open Mobile Menu
+  ============================ */
+
+  .navbar__links--open {
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: translateY(0);
+  }
+
+
+  /* ============================
+     Mobile Links
+  ============================ */
+
+  .navbar__links a {
+    width: 100%;
+
+    padding: 13px 20px;
+
+    text-align: center;
+
+    font-size: 15px;
+
+    color: #344054;
+  }
+
+
+  /* ============================
+     Remove Desktop Underline
+  ============================ */
+
+  .navbar__links a::after {
+    display: none;
+  }
+
+
+  /* ============================
+     Active Mobile Link
+  ============================ */
+
+  .navbar__links a.active {
+    color: #1f3a5f;
+
+    font-weight: 600;
+
+    background: #f5f7fa;
+  }
+
+
+  /* ============================
+     Mobile Hover
+  ============================ */
+
+  .navbar__links a:hover {
+    color: #1f3a5f;
+
+    background: #f5f7fa;
+  }
+
+}
+
+
+/* ==============================
+   Small Mobile
+================================ */
+
+@media (max-width: 480px) {
+
+  .navbar__container {
+    height: 64px;
+
+    padding: 0 13px;
+  }
+
+
+  /* Logo */
+
+  .navbar__logo-image {
+    width: 40px;
+    height: 40px;
+  }
+
+  .navbar__brand h1 {
+    font-size: 15px;
+  }
+
+  .navbar__brand span {
+    font-size: 7px;
+
+    letter-spacing: 0.9px;
+  }
+
+
+  /* Menu Button */
+
+  .navbar__menu-button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .navbar__menu-button span {
+    width: 21px;
+  }
+
+
+  /* Mobile Menu */
+
+  .navbar__links {
+    top: 64px;
+
+    width: 62%;
+  }
+
+
+  .navbar__links a {
+    padding: 12px 16px;
+
+    font-size: 14px;
+  }
+
+}
+

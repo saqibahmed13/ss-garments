@@ -273,7 +273,7 @@ ${message}
 
       {/* Floating WhatsApp */}
       <a
-        href={`https://wa.me/${whatsappNumber}`}
+        href={`https://wa.me/${+919900349629}`}
         target="_blank"
         rel="noopener noreferrer"
         className="whatsapp-float"

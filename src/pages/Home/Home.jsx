@@ -14,9 +14,10 @@ const Home = () => {
 
       <Products />
 
-      <WhyChooseUs/>
-       <Contact />
+      <WhyChooseUs />
       
+      <Contact />
+
 
     </>
   );
