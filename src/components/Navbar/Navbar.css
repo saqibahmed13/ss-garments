@@ -37,9 +37,7 @@
 .navbar__logo {
   display: flex;
   align-items: center;
-
-  gap: 10px;
-
+  gap: 3px;
   text-decoration: none;
 }
 
@@ -50,9 +48,20 @@
   object-fit: contain;
 }
 
+
+/* ==============================
+   Brand Text
+================================ */
+
 .navbar__brand {
   display: flex;
   flex-direction: column;
+
+  justify-content: center;
+
+  /* Keeps the text visually centered
+     with the SS logo */
+  margin-top: 2px;
 }
 
 .navbar__brand h1 {
@@ -67,6 +76,8 @@
 }
 
 .navbar__brand span {
+  display: block;
+
   margin-top: 5px;
 
   color: #667085;
@@ -74,6 +85,8 @@
   font-size: 9px;
 
   letter-spacing: 1.2px;
+
+  line-height: 1;
 }
 
 
@@ -242,14 +255,31 @@
     height: 43px;
   }
 
+
+  /* ============================
+     Mobile Brand
+  ============================ */
+
+  .navbar__brand {
+    margin-top: 1px;
+
+    justify-content: center;
+  }
+
   .navbar__brand h1 {
     font-size: 15px;
+
+    line-height: 1;
   }
 
   .navbar__brand span {
+    margin-top: 4px;
+
     font-size: 8px;
 
     letter-spacing: 1px;
+
+    line-height: 1;
   }
 
 
@@ -388,25 +418,46 @@
   }
 
 
-  /* Logo */
+  /* ============================
+     Logo
+  ============================ */
 
   .navbar__logo-image {
     width: 40px;
     height: 40px;
   }
 
+
+  /* ============================
+     Small Mobile Brand
+  ============================ */
+
+  .navbar__brand {
+    margin-top: 1px;
+
+    justify-content: center;
+  }
+
   .navbar__brand h1 {
     font-size: 15px;
+
+    line-height: 1;
   }
 
   .navbar__brand span {
+    margin-top: 4px;
+
     font-size: 7px;
 
     letter-spacing: 0.9px;
+
+    line-height: 1;
   }
 
 
-  /* Menu Button */
+  /* ============================
+     Menu Button
+  ============================ */
 
   .navbar__menu-button {
     width: 40px;
@@ -418,7 +469,9 @@
   }
 
 
-  /* Mobile Menu */
+  /* ============================
+     Mobile Menu
+  ============================ */
 
   .navbar__links {
     top: 64px;
@@ -434,4 +487,3 @@
   }
 
 }
-

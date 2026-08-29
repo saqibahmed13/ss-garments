@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import logo from "../../assets/images/ss-garments1.png";
+import logo from "../../assets/images/newlogo2.png";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -49,7 +49,6 @@ const Navbar = () => {
 
           <div className="navbar__brand">
             <h1>GARMENTS</h1>
-            <span>Quality in Every Stitch</span>
           </div>
         </a>
 
