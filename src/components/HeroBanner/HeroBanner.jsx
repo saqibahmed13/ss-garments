@@ -9,9 +9,12 @@ import uniformBanner from "../../assets/images/gallery/SchoolUniform.png";
 import culturalBanner from "../../assets/images/gallery/Cultural.png";
 import eventBanner from "../../assets/images/gallery/Cultural2.png";
 
+import uniformBannerMobile from "../../assets/images/gallery/heroBanner-mobile1.png";
+
 const banners = [
   {
     image: uniformBanner,
+    mobileImage: uniformBannerMobile,
     eyebrow: "Quality in Every Stitch",
     title: "School",
     highlight: "Uniforms",
@@ -63,15 +66,23 @@ const HeroBanner = () => {
         {banners.map((banner, index) => (
           <div
             key={index}
-            className={`hero__slide ${
-              index === currentSlide ? "hero__slide--active" : ""
-            }`}
+            className={`hero__slide ${index === currentSlide ? "hero__slide--active" : ""
+              }`}
           >
-            <img
-              src={banner.image}
-              alt={`${banner.title} ${banner.highlight}`}
-              className="hero__background"
-            />
+            <picture className="hero__picture">
+              {banner.mobileImage && (
+                <source
+                  media="(max-width: 768px)"
+                  srcSet={banner.mobileImage}
+                />
+              )}
+
+              <img
+                src={banner.image}
+                alt={`${banner.title} ${banner.highlight}`}
+                className="hero__background"
+              />
+            </picture>
 
             {/* Overlay */}
             <div className="hero__overlay" />
@@ -144,9 +155,8 @@ const HeroBanner = () => {
           <button
             key={index}
             type="button"
-            className={`hero__dot ${
-              index === currentSlide ? "hero__dot--active" : ""
-            }`}
+            className={`hero__dot ${index === currentSlide ? "hero__dot--active" : ""
+              }`}
             onClick={() => setCurrentSlide(index)}
             aria-label={`Go to slide ${index + 1}`}
           />
