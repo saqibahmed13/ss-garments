@@ -10,6 +10,8 @@ import culturalBanner from "../../assets/images/gallery/Cultural.png";
 import eventBanner from "../../assets/images/gallery/Cultural2.png";
 
 import uniformBannerMobile from "../../assets/images/gallery/heroBanner-mobile1.png";
+import culturalBannerMobile from "../../assets/images/gallery/heroBanner-mobile2.png";
+import eventBannerMobile from "../../assets/images/gallery/heroBanner-mobile3.png";
 
 const banners = [
   {
@@ -23,6 +25,7 @@ const banners = [
   },
   {
     image: culturalBanner,
+    mobileImage: culturalBannerMobile,
     eyebrow: "Celebrate Tradition",
     title: "Indian Cultural",
     highlight: "Costumes",
@@ -31,6 +34,7 @@ const banners = [
   },
   {
     image: eventBanner,
+        mobileImage: eventBannerMobile,
     eyebrow: "Made for Every Occasion",
     title: "Event",
     highlight: "Wear",
