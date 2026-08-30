@@ -8,6 +8,7 @@ import Contact from "../../components/Contact/Contact";
 const Home = () => {
   return (
     <>
+     <main id="home">
       <HeroBanner />
 
       <Products />
@@ -17,6 +18,7 @@ const Home = () => {
       <WhyChooseUs />
       
       <Contact />
+      </main>
 
 
     </>

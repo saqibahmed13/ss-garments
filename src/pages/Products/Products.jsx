@@ -182,7 +182,7 @@ const Products = () => {
 
 
   return (
-    <section id="products" className="products">
+    <section id="collections" className="products">
 
       <div className="products__container">
 
