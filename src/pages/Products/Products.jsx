@@ -177,8 +177,8 @@ const Products = () => {
     activeFilter === "all"
       ? products
       : products.filter(
-          (product) => product.category === activeFilter
-        );
+        (product) => product.category === activeFilter
+      );
 
 
   return (
@@ -198,18 +198,18 @@ const Products = () => {
             <span> every occasion.</span>
           </h2>
 
-         <p className="products__description">
-  From school uniforms to professional and traditional
-  garments, we design and manufacture clothing with
-  attention to quality, comfort and detail.
-</p>
+          <p className="products__description">
+            From school uniforms to professional and traditional
+            garments, we design and manufacture clothing with
+            attention to quality, comfort and detail.
+          </p>
 
-<p className="products__custom-note">
-  <strong>More designs available.</strong>{" "}
-  The designs shown are a selection of our work. We also undertake
-  customized garment orders based on your preferred design, fabric,
-  colour and specifications.
-</p>
+          <p className="products__custom-note">
+            <strong>More designs available.</strong>{" "}
+            The designs shown are a selection of our work. We also undertake
+            customized garment orders based on your preferred design, fabric,
+            colour and specifications.
+          </p>
 
 
 
@@ -224,11 +224,10 @@ const Products = () => {
             <button
               key={filter.value}
               type="button"
-              className={`products__filter ${
-                activeFilter === filter.value
+              className={`products__filter ${activeFilter === filter.value
                   ? "products__filter--active"
                   : ""
-              }`}
+                }`}
               onClick={() => setActiveFilter(filter.value)}
             >
               {filter.label}

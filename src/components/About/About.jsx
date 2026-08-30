@@ -18,10 +18,22 @@ const About = () => {
             About SS Garments
           </span>
 
-          <h2 className="about__title">
-            Experience you can
-            <span> trust.</span>
-          </h2>
+          <div className="about__mobile-top">
+            <h2 className="about__title">
+              Experience you can
+              <span> trust.</span>
+            </h2>
+
+            {/* Mobile Owner Photo */}
+            <div className="about__mobile-photo">
+              <img
+                src={ownerImage}
+                alt="Founder and Owner of SS Garments"
+              />
+            </div>
+          </div>
+
+          <div className="about__gold-line"></div>
 
           <p className="about__description">
             SS Garments is a garment manufacturing and tailoring business
@@ -151,7 +163,7 @@ const About = () => {
           <div className="about__school">
             Bethel Public School
           </div>
-          
+
           <div className="about__school">
             King Kits Public School
           </div>

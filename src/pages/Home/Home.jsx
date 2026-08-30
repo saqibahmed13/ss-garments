@@ -1,6 +1,6 @@
 
 import HeroBanner from "../../components/HeroBanner/HeroBanner";
-import About from "../../components/AboutSection/About";
+import About from "../../components/About/About";
 import Products from "../Products/Products";
 import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
 import Contact from "../../components/Contact/Contact";
@@ -10,9 +10,9 @@ const Home = () => {
     <>
       <HeroBanner />
 
-      <About />
-
       <Products />
+
+      <About />
 
       <WhyChooseUs />
       
