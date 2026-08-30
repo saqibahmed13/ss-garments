@@ -187,33 +187,29 @@ const Products = () => {
       <div className="products__container">
 
         {/* Header */}
-        <div className="products__header">
+       <div className="products__header">
 
-          <span className="products__eyebrow">
-            Our Collection
-          </span>
+  <span className="products__eyebrow">
+    Our Collection
+  </span>
 
-          <h2 className="products__title">
-            Quality garments for
-            <span> every occasion.</span>
-          </h2>
+  <h2 className="products__title">
+    Quality garments for
+    <span> every occasion.</span>
+  </h2>
 
-          <p className="products__description">
-            From school uniforms to professional and traditional
-            garments, we design and manufacture clothing with
-            attention to quality, comfort and detail.
-          </p>
+  <p className="products__description">
+    School uniforms, traditional wear and custom garments,
+    crafted with quality and attention to detail.
+  </p>
 
-          <p className="products__custom-note">
-            <strong>More designs available.</strong>{" "}
-            The designs shown are a selection of our work. We also undertake
-            customized garment orders based on your preferred design, fabric,
-            colour and specifications.
-          </p>
+  <p className="products__custom-note">
+    <strong>Looking for a different design?</strong>{" "}
+    We also create customized garments to match your design,
+    fabric, colour and requirements.
+  </p>
 
-
-
-        </div>
+</div>
 
 
         {/* Filters */}
