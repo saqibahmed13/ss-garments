@@ -100,7 +100,7 @@ ${message}
 
                 {/* Phone 2 */}
                 <a
-                  href="+918050090080"
+                  href="tel:+918050090080"
                   className="contact__detail"
                 >
                   <div className="contact__icon">
