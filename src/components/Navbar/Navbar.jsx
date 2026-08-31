@@ -54,9 +54,8 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className={`navbar__menu-button ${
-            menuOpen ? "navbar__menu-button--open" : ""
-          }`}
+          className={`navbar__menu-button ${menuOpen ? "navbar__menu-button--open" : ""
+            }`}
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle navigation menu"
           aria-expanded={menuOpen}
@@ -68,9 +67,8 @@ const Navbar = () => {
 
         {/* Navigation */}
         <nav
-          className={`navbar__links ${
-            menuOpen ? "navbar__links--open" : ""
-          }`}
+          className={`navbar__links ${menuOpen ? "navbar__links--open" : ""
+            }`}
         >
           <a
             href="#home"
@@ -81,6 +79,14 @@ const Navbar = () => {
           </a>
 
           <a
+            href="#collections"
+            className={activeSection === "collections" ? "active" : ""}
+            onClick={() => handleNavClick("collections")}
+          >
+            Collections
+          </a>
+
+          <a
             href="#about"
             className={activeSection === "about" ? "active" : ""}
             onClick={() => handleNavClick("about")}
@@ -88,13 +94,7 @@ const Navbar = () => {
             About
           </a>
 
-          <a
-            href="#collections"
-            className={activeSection === "collections" ? "active" : ""}
-            onClick={() => handleNavClick("collections")}
-          >
-            Collections
-          </a>
+
 
           <a
             href="#why-us"
