@@ -2,7 +2,7 @@ import "./Contact.css";
 
 const Contact = () => {
 
-  const whatsappNumber = "91XXXXXXXXXX";
+  const whatsappNumber = "919900349620";
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -79,7 +79,7 @@ ${message}
 
                 {/* Phone 1 */}
                 <a
-                  href="tel:+919XXXXXXXXX"
+                  href="tel:+919900349620"
                   className="contact__detail"
                 >
                   <div className="contact__icon">
@@ -100,7 +100,7 @@ ${message}
 
                 {/* Phone 2 */}
                 <a
-                  href="+918XXXXXXXXX"
+                  href="+918050090080"
                   className="contact__detail"
                 >
                   <div className="contact__icon">
